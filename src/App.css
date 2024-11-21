@@ -1,16 +1,9 @@
+html, body {
+  background-color: rgb(213, 215, 219);
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -28,11 +21,61 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Form {
+  background-color: #f7f7f7;;
+  border: 3px solid rgb(62, 92, 131);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh auto;
+  padding: 10px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 600px;
+}
+
+.Title{
+  font-size: 50px;
+  color: rgb(62, 92, 131);
+  margin-bottom: 115px;
+  position: relative;
+  text-align: center;
+}
+
+.Title::after {
+  content: '';
+  display: block;
+  margin: 10px auto 0; 
+  width: 120%;
+  height: 3px; 
+  background-color: rgb(62, 92, 131);
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.Name, .Email {
+  font-size: 30px;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start; 
+  margin-bottom: 5px;
+}
+
+.NameInput, .EmailInput {
+  font-size: 20px;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.SendButton {
+  background-color: rgb(62, 92, 131);
+  color: white;
+  font-size: 20px;
+  margin-top: 105px;
+  height: 40px;
+  width: 300px;
 }
