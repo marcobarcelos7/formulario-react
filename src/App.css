@@ -2,11 +2,20 @@ html, body {
   background-color: rgb(213, 215, 219);
 }
 
-.App {
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
   text-align: center;
 }
 
-.App-header {
+.Forms {
+  text-align: center;
+}
+
+.Forms-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -17,7 +26,7 @@ html, body {
   color: white;
 }
 
-.App-link {
+.Forms-link {
   color: #61dafb;
 }
 
@@ -50,7 +59,7 @@ html, body {
   width: 120%;
   height: 3px; 
   background-color: rgb(62, 92, 131);
-  position: absolute; 
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: -10px;
